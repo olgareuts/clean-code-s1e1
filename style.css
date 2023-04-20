@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.header .info-link {
+.header .header__link {
   font-family: fantasy, cursive;
 }
 
@@ -34,13 +34,13 @@ body {
   margin: 0 auto 0;
 }
 
-.task-input {
+.section__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.section__wrapper {
   display: flex;
 }
 
@@ -141,18 +141,18 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-button.delete-button img {
+button.list__button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete-button img:hover {
+button.list__button_delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul.section__list_completed label {
   text-decoration: line-through;
   color: #888;
 }
@@ -162,11 +162,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.list__item_edit input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.list__item_edit label {
   display: none;
 }
